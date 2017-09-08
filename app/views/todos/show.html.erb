@@ -1,0 +1,20 @@
+<%= link_to "Todos ", todos_path %>
+<%= link_to "Edit ", edit_todo_path(@todo) %>
+<div>
+  <div class="">
+    <div class="">
+      Name :
+    </div>
+    <div class="">
+      <%= @todo.name %>
+    </div>
+  </div>
+  <div class="">
+    <div class="">
+      Description :
+    </div>
+    <div class="">
+      <%= @todo.description %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<%= link_to "Todos ", todos_path %>
+<%= form_for @todo do |f|%>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
